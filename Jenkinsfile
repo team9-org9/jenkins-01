@@ -21,10 +21,10 @@ pipeline {
     }
     stage('codequality'){
         steps{
-      sh mvn clean verify sonar:sonar \
+      shmvn clean verify sonar:sonar \
   -Dsonar.projectKey=team9 \
   -Dsonar.host.url=http://18.119.107.226:9000 \
-  -Dsonar.login=sqp_6831c24297795fbec5baf640ae1c980270c872c0
+  -Dsonar.login=sqp_61a78332ffc8e41b1ca3db63a48874a2f40a1806
       }
     }
   }
